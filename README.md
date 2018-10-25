@@ -1,0 +1,39 @@
+# 
++ 安装git
++ git --version 查看版本
++ 
++ git config --global user.name "xiaodou" 配置
++ git config --global user.email "443903845@qq.com" 配置
++ git config --list  查看所有的已配置
++ git init  CD到一个目录里运行该命令 即可初始化项目（文件夹/目录,把这个目录变成一个仓库 或者git init 后面加目录名，就能初始化该目录（没有该目录会创建该目录）
++ ls -la 查看文件夹的文件 包括隐藏文件
++ git clone git地址  即可克隆一个项目到本地
++ git status 查看项目状态
++ git add . 把所有修改后的项目保存在暂存区（只保存在本地，并没有上传），每一次保存都是一次存档，可以回到之前的存档 ，如果后面的.写成文件名即只保存此文件
++ git commit -m "修改了xxx"  添加备注
++ git log 查看历史版本 按Q退出
++ git log -p 查看修改了什么内容 
++ git checkout xxx 查看历史的某一个版本 xxx是commit 的ID号 前七位即可
++ git checkout - 回到上一个版本，不管上一次操作的是哪个版本 
++ git tag -a v1 -m "第一个大版本"  用tag分割成大版本
+
+### 创建分支
++ 主线是master 可以创建分支branch ，相当平行时空
++ git branch xxx(分支名)  创建分支
++ git checkout xxx    切换到分支
++ git log --oneline 查看状态
++ git checkout master 切换回到主线
++ git log --oneline --all --graph 图形化显示主线和分支 
++ git merge xxx（分支名） 合并分支 如果合并文件有冲突，可手动修改，因为是自己写的代码，所以知道手动怎么改
+
+### 远程仓库
++ git remote add 自定义名 地址   //连接远程仓库
++ git remote -v  //查看当地连接的所有远程仓库
++ git push -u 自定义名 分支名（一般是主线master） //上传代码
++ git add .
++ git commit -m "备注"
++ git push -u vue master
++ 
++ 
++ 
++ 

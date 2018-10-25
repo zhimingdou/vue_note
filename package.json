@@ -1,0 +1,21 @@
+{
+  "private": true,
+  "reamed": "README.md",
+  "name": "20.2",
+  "version": "1.0.0",
+  "description": "+ 语法\r + 指令\r + 组件\r \t+ 全局组件\r \t+ \r + 路由\r + 动画\r +",
+  "main": "index.js",
+  "repository": {
+    "private": true
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jquery": "^3.3.1",
+    "vue": "^2.5.17"
+  }
+}
