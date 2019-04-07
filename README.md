@@ -30,10 +30,22 @@
 + git remote add 自定义名 地址   //连接远程仓库
 + git remote -v  //查看当地连接的所有远程仓库
 + git push -u 自定义名 分支名（一般是主线master） //上传代码
-+ git add .
-+ git commit -m "备注"
-+ git push -u vue master
+
+
+
+从远程拉取代码到本地上
+git clone 地址
+
+写完或者修改完代码
+添加到暂存区
++ git add . 
++ git commit -m "备注修改了什么"
+
+上传到远程仓库
++ git push -u origin master
 + 
 + 
 + 
 + 
+排除问题 遇到过的问题
+进错文件夹，要是从远程仓库拉取的代码，git remote 一定有个origin,没有就是进错了
