@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="./node_modules/vue/dist/vue.js"></script>
+</head>
+<body>
+    <div class="todo">
+        <section>todolist</section>
+            <input type="text" value="addvalue" v-model="valuelist">
+        
+            <input type="button" @click="add" value="add" >
+            <ul class="disList">
+                <li :value="valuelist"> {{valuelist}} </li>
+            </ul>
+
+    </div>
+    <script>
+
+        var vm = new Vue({
+            el:".todo",
+            data:{
+                valuelist:[1,2]
+            },
+            method:{
+
+            }
+        })
+    
+    
+    </script>
+</body>
+</html>
